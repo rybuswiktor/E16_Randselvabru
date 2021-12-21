@@ -1,0 +1,733 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    overflow: hidden;
+}
+
+/*.hidden {
+    visibility: collapse;
+}
+
+*/
+
+.icon {
+    max-width: 20px;
+    max-height: 20px;
+    margin: auto;
+}
+
+.text {
+    color: rgb(173, 173, 173);
+    border-bottom: 1px solid rgb(104, 104, 104);
+    padding: 0.6em 0.6em 0.6em 1em;
+}
+
+.text:hover {
+    background-color: #3e4147;
+}
+
+.text-title {
+    color: rgb(236, 236, 236);
+}
+
+.basic-button {
+    background-color: #202225;
+    width: 100%;
+    height: 40px;
+    border: none;
+    text-align: center;
+}
+
+.basic-button:hover {
+    background-color: #2a2d33;
+}
+
+.side-menu {
+    z-index: 1;
+    position: fixed;
+    background-color: #36393F;
+    height: 100vh;
+}
+
+.side-sub-menu {
+    width: 100%;
+    height: inherit;
+    margin: 2px;
+}
+
+.ifcjs-dimension-preview {
+    width: 1rem;
+    height: 1rem;
+    background-color: #FFA50F;
+    border-radius: 1rem;
+    opacity: 0.5;
+}
+
+.ifcjs-dimension-label {
+    background-color: black;
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+#viewer-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+/*#side-menu-left {
+    width: 40px;
+}
+
+#side-menu-right {
+    right: 0;
+    width: 300px;
+}
+
+*/
+.loading-overlay {
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f150;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-progress {
+    color: red;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+#can {
+    position: fixed;
+    width: 100%;
+    height: auto;
+   
+}
+
+
+#cubes-cont {
+    position: absolute;
+    left: 0;
+    top: -3vh;
+    width: 100%;
+    height: 380px;
+    display: block;
+    box-sizing: border-box;
+    z-index: -1;
+    
+  }
+
+
+
+#axis1 #axis2 {
+    /*position: relative;
+    background-color: #202225;
+    width: 100px;
+    height: 40px;
+    border: none;
+    */text-align: center;  
+    color: rgb(232, 216, 216);
+}
+*/
+
+
+/* Container needed to position the button. Adjust the width as needed */
+.container-pic {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+  }
+
+
+
+  /* Make the image responsive */
+  .container-pic img {
+    width: 100%;
+    height: 52vh;
+    
+  }
+  
+  /* OK !! Style the button and place it in the middle of the container/image */
+  .container-pic .btn-a1 {
+    position: absolute;
+    top: 17%;
+    left: 11.5%; 
+    /*top: 125px;
+    left: 163px;*/
+    
+
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 60%;
+    padding: 0.7% 0.9%;
+    border: none;
+    cursor: pointer;
+    border-radius: 15%;
+  }
+
+  .container-pic .btn-a2 {
+    position: absolute;
+    /*top: 19%;
+    left: 80%; */
+    top: 17%;
+    left: 21%;
+
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 60%;
+    padding: 0.7% 0.9%;
+    border: none;
+    cursor: pointer;
+    border-radius: 15%;
+  }  
+
+  .container-pic .btn-a3 {
+    position: absolute;
+    /*top: 19%;
+    left: 80%; */
+    top: 17%;
+    left: 46%;
+
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 60%;
+    padding: 0.7% 0.9%;
+    border: none;
+    cursor: pointer;
+    border-radius: 15%;
+  }
+
+  .container-pic .btn-a4 {
+    position: absolute;
+    /*top: 19%;
+    left: 80%; */
+    top: 17%;
+    left: 64%;
+
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 60%;
+    padding: 0.7% 0.9%;
+    border: none;
+    cursor: pointer;
+    border-radius: 15%;
+  }
+
+  .container-pic .btn-a5 {
+    position: absolute;
+    /*top: 19%;
+    left: 80%; */
+    top: 17%;
+    left: 72%;
+
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 60%;
+    padding: 0.7% 0.9%;
+    border: none;
+    cursor: pointer;
+    border-radius: 15%;
+  }
+
+  .container-pic .btn-a6 {
+    position: absolute;
+    /*top: 19%;
+    left: 80%; */
+    top: 17%;
+    left: 79.5%;
+
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 60%;
+    padding: 0.7% 0.9%;
+    border: none;
+    cursor: pointer;
+    border-radius: 15%;
+  }
+
+  .container-pic .btn-a7 {
+    position: absolute;
+    /*top: 19%;
+    left: 80%; */
+    top: 17%;
+    left: 87.5%;
+
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 60%;
+    padding: 0.7% 0.9%;
+    border: none;
+    cursor: pointer;
+    border-radius: 15%;
+  }
+
+  .container-pic .btn-a8 {
+    position: absolute;
+    /*top: 19%;
+    left: 80%; */
+    top: 17%;
+    left: 93.5%;
+
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 60%;
+    padding: 0.7% 0.9%;
+    border: none;
+    cursor: pointer;
+    border-radius: 15%;
+  }
+
+  .container-pic .btn-aFFB2 {
+    position: absolute;
+    /*top: 19%;
+    left: 80%; */
+    top: 25%;
+    left: 15.5%;
+
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 60%;
+    padding: 0.7% 0.9%;
+    border: none;
+    cursor: pointer;
+    border-radius: 15%;
+  }
+
+  .container-pic .btn-aFFB3 {
+    position: absolute;
+    /*top: 19%;
+    left: 80%; */
+    top: 25%;
+    left: 33.5%;
+
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 60%;
+    padding: 0.7% 0.9%;
+    border: none;
+    cursor: pointer;
+    border-radius: 15%;
+  }
+
+  .container-pic .btn-aMSS {
+    position: absolute;
+    /*top: 19%;
+    left: 80%; */
+    top: 25%;
+    left: 75.0%;
+
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 60%;
+    padding: 0.7% 0.9%;
+    border: none;
+    cursor: pointer;
+    border-radius: 15%;
+  }
+
+  
+  .container-pic .btn-a1:hover, .btn-a2:hover, .btn-a3:hover, .btn-a4:hover, .btn-a5:hover, .btn-a6:hover, .btn-a7:hover, .btn-a8:hover, .btn-aFFB2:hover, .btn-aFFB3:hover, .btn-aMSS:hover {
+    background-color: rgb(250, 4, 4);
+  }
+
+  .container-pic .btn-a1:hover + .btn-a1a, .btn-a2:hover + .btn-a2a, .btn-a3:hover + .btn-a3a, .btn-a4:hover + .btn-a4a, .btn-a5:hover + .btn-a5a, .btn-a6:hover + .btn-a6a, .btn-a7:hover + .btn-a7a, .btn-a8:hover + .btn-a8a, .btn-aFFB2:hover + .btn-aFFB2a, .btn-aFFB3:hover + .btn-aFFB3a, .btn-aMSS:hover + .btn-aMSSa {
+    display: block;
+  }  
+
+  .btn-a1a {
+    position: absolute;
+    background-color: transparent;
+    top: 41%;
+    left: 11%;
+    opacity: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    padding: 5vh 2vh 1vw 1vw;
+    border: 2.5px dashed red;
+    border-radius: 15%;
+    display: none;
+  }
+  .btn-a2a {
+    position: absolute;
+    background-color: transparent;
+    top: 41%;
+    left: 21%;
+    opacity: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /*padding: 2.9% 0.7% 1.0%;*/
+    padding: 6vh 2vh 1vw 1vw;
+    border: 2.5px dashed red;
+    border-radius: 15%;
+    display: none;
+  }
+
+  .btn-a3a {
+    position: absolute;
+    background-color: transparent;
+    top: 43%;
+    left: 46%;
+    opacity: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /*padding: 2.9% 0.7% 1.0%;*/
+    padding: 6vh 3vh 3vw 2vw;
+    border: 2.5px dashed red;
+    border-radius: 15%;
+    display: none;
+  }
+
+  .btn-a4a {
+    position: absolute;
+    background-color: transparent;
+    top: 44%;
+    left: 64%;
+    opacity: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /*padding: 2.9% 0.7% 1.0%;*/
+    padding: 6.5vh 3vh 2vw 1vw;
+    border: 2.5px dashed red;
+    border-radius: 15%;
+    display: none;
+  }
+
+  .btn-a5a {
+    position: absolute;
+    background-color: transparent;
+    top: 43%;
+    left: 72%;
+    opacity: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /*padding: 2.9% 0.7% 1.0%;*/
+    padding: 6.0vh 3vh 2vw 1vw;
+    border: 2.5px dashed red;
+    border-radius: 15%;
+    display: none;
+  }
+
+  .btn-a6a {
+    position: absolute;
+    background-color: transparent;
+    top: 42%;
+    left: 79.5%;
+    opacity: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /*padding: 2.9% 0.7% 1.0%;*/
+    padding: 3.5vh 3vh 2vw 1vw;
+    border: 2.5px dashed red;
+    border-radius: 15%;
+    display: none;
+  }
+
+  .btn-a7a {
+    position: absolute;
+    background-color: transparent;
+    top: 42%;
+    left: 87.5%;
+    opacity: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /*padding: 2.9% 0.7% 1.0%;*/
+    padding: 3.0vh 3vh 2vw 1vw;
+    border: 2.5px dashed red;
+    border-radius: 15%;
+    display: none;
+  }
+
+  .btn-a8a {
+    position: absolute;
+    background-color: transparent;
+    top: 41%;
+    left: 93.5%;
+    opacity: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /*padding: 2.9% 0.7% 1.0%;*/
+    padding: 2.5vh 3vh 1vw 1vw;
+    border: 2.5px dashed red;
+    border-radius: 15%;
+    display: none;
+  }
+
+  .btn-aFFB2a {
+    position: absolute;
+    background-color: transparent;
+    top: 38%;
+    left: 21%;
+    opacity: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /*padding: 2.9% 0.7% 1.0%;*/
+    padding: 1vh 1vh 1vw 18vw;
+    border: 2.5px dashed red;
+    border-radius: 15%;
+    display: none;
+  }
+
+  .btn-aFFB3a {
+    position: absolute;
+    background-color: transparent;
+    top: 39%;
+    left: 46%;
+    opacity: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /*padding: 2.9% 0.7% 1.0%;*/
+    padding: 1.5vh 1vh 1vw 32vw;
+    border: 2.5px dashed red;
+    border-radius: 15%;
+    display: none;
+  }
+
+  .btn-aMSSa {
+    position: absolute;
+    background-color: transparent;
+    top: 40%;
+    left: 78%;
+    opacity: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /*padding: 2.9% 0.7% 1.0%;*/
+    padding: 1.5vh 1vh 1vw 31vw;
+    border: 2.5px dashed red;
+    border-radius: 15%;
+    display: none;
+  }
+
+
+
+
+/* CSS for list */
+
+ul {
+    padding-top: 50px;
+    list-style-type: none;
+    
+   
+}
+
+li {
+    font-size: 15px;
+    width: 8em;
+    height: 1.4em;
+    color: rgb(205, 202, 198);
+    border-left: 0.08em solid;
+    position: relative;
+    margin-top: 0.8em;
+    cursor: pointer;
+}
+
+li::before,
+li::after
+ {
+    content: '';
+    position: absolute;
+    width: inherit;
+    border-left: inherit;
+    z-index: -1;
+}
+
+li::before {
+    height: 80%;
+    top: 10%;
+    left: calc(-0.15em - 0.08em * 2);
+    filter: brightness(0.8);
+}
+
+li::after {
+    height: 60%;
+    top: 20%;
+    left: calc(-0.15em * 2 - 0.08em * 3);
+    filter: brightness(0.6);
+}
+
+li span {
+    position: relative;
+    height: 120%;
+    top: -10%;
+    box-sizing: border-box;
+    border: 0.08em solid;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    transform: translateX(calc(-0.15em * 3 - 0.08em * 2));
+    transition: 0.3s;
+}
+
+li:hover span {
+    transform: translateX(0.15em);
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+.moveup {
+    position: relative;
+    top: -107px;
+    height: 284px;
+    
+}
+
+#back_button {
+    position: absolute;
+    top: 20%;
+    left: 0%;
+}
+
+#cont-back {
+   position: absolute;
+   padding-top: 50px;
+   list-style-type: none;
+   z-index: 4;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 1.3vw;
+    padding: 1vh;
+    margin: 0 auto;
+    margin-bottom: 1vh;
+    position: relative;
+    top: -1vh;
+    background-color: black;
+    
+}
+
+.frame {
+    position: fixed;
+    border-style: 2px solid blue;
+    top: 27%; /* +10%  */
+    /*left: 2%;*/
+    display: inline-block;
+    
+}
+
+.frame_a3 {
+    position: fixed;
+    border-style: 2px solid blue;
+    top: 29%; /* +10%  */
+    /*left: 2%;*/
+    display: inline-block;
+    
+}
+
+.frame_a4 {
+    position: fixed;
+    border-style: 2px solid blue;
+    top: 29%; /* +10%  */
+    /*left: 2%;*/
+    display: inline-block;
+    
+}
+
+.frame_a5 {
+    position: fixed;
+    border-style: 2px solid blue;
+    top: 28%; /* +10%  */
+    /*left: 2%;*/
+    display: inline-block;
+    
+}
+
+.frame_a6 {
+    position: fixed;
+    border-style: 2px solid blue;
+    top: 28%; /* +10%  */
+    /*left: 2%;*/
+    display: inline-block;
+    
+}
+.frame_a7 {
+    position: fixed;
+    border-style: 2px solid blue;
+    top: 28%; /* +10%  */
+    /*left: 2%;*/
+    display: inline-block;
+    
+}
+.frame_a8 {
+    position: fixed;
+    border-style: 2px solid blue;
+    top: 27%; /* +10%  */
+    /*left: 2%;*/
+    display: inline-block;
+    
+}
+
+.frame_aFFB2 {
+    position: fixed;
+    border-style: 2px solid blue;
+    top: 24%; /* +10%  */
+    /*left: 2%;*/
+    display: inline-block;
+    
+}
+.frame_aFFB3 {
+    position: fixed;
+    border-style: 2px solid blue;
+    top: 24%; /* +10%  */
+    /*left: 2%;*/
+    display: inline-block;
+    
+}
+.frame_aMSS {
+    position: fixed;
+    border-style: 2px solid blue;
+    top: 25%; /* +10%  */
+    /*left: 2%;*/
+    display: inline-block;
+    
+}

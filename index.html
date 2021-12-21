@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/png" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E16 Randselvabru</title>
+  </head>
+  <body>
+    <div id="cont-pic" class="container-pic">
+      <img src="pictures/E16_overview.PNG" alt="E16">
+      <ul id="cont-back" class="hidden">
+        <li id="back_button"><span>Back</span></li>
+      </ul>  
+      <button class="btn-a1", id="axis1">AXIS 1</button>
+      <button class="btn-a1a" id="axis1_frame"></button>
+      <button class="btn-a2", id="axis2">AXIS 2</button>
+      <button class="btn-a2a" id="axis2_frame"></button>
+      <button class="btn-a3", id="axis3">AXIS 3</button>
+      <button class="btn-a3a" id="axis3_frame"></button>
+      <button class="btn-a4", id="axis4">AXIS 4</button>
+      <button class="btn-a4a" id="axis4_frame"></button>
+      <button class="btn-a5", id="axis5">AXIS 5</button>
+      <button class="btn-a5a" id="axis5_frame"></button>
+      <button class="btn-a6", id="axis6">AXIS 6</button>
+      <button class="btn-a6a" id="axis6_frame"></button>
+      <button class="btn-a7", id="axis7">AXIS 7</button>
+      <button class="btn-a7a" id="axis7_frame"></button>
+      <button class="btn-a8", id="axis8">AXIS 8</button>
+      <button class="btn-a8a" id="axis8_frame"></button>
+      <button class="btn-aFFB2", id="axisFFB2">FFB2</button>
+      <button class="btn-aFFB2a" id="axisFFB2_frame"></button>
+      <button class="btn-aFFB3", id="axisFFB3">FFB3</button>
+      <button class="btn-aFFB3a" id="axisFFB3_frame"></button>
+      <button class="btn-aMSS", id="axisMSS">MSS</button>
+      <button class="btn-aMSSa" id="axisMSS_frame"></button>
+      <h1>E16 Randselvabru, Norway</h1>
+    </div>
+    <div id="viewer-container"></div>
+    <div id="can">
+      <canvas id="cubes-cont"></canvas>
+    </div>
+    <div id="loading-overlay" class="loading-overlay hidden">
+      <h1 id="loading-progress" class="loading-progress"></h1>
+    </div>
+    <!--
+    <ul>
+      <li id="back_button"><span>Back</span></li>
+      <li id="axis1"><span>Axis 1</span></li>
+      <li><span>Axis 2</span></li>
+      <li><span>Axis 3</span></li>
+      <li><span>FFB2</span></li>
+    </ul>
+    //-->
+     
+    
+    <script type="module" src="./build/main.js"></script>
+  </body>
+</html>
